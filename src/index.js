@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Caneta_1 = require("./Caneta/Caneta");
+var bic = new Caneta_1.default();
+bic.modelo = 'Bic Crystal';
+bic.cor = 'Azul';
+// bic.ponta = 0.5;
+// bic.carga = 100;
+// bic.tampada = true;
+console.log(bic.escrever());
+bic.destampar();
+bic.status();
