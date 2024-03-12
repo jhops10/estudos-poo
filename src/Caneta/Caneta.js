@@ -25,22 +25,6 @@ var Caneta = /** @class */ (function () {
             return 'Você escreve uma linda frase e gasta 10% da carga de tinta.';
         }
     };
-    Caneta.prototype.rabiscar = function () {
-        if (this.tampada) {
-            return 'Você não pode rabiscar, pois sua caneta esta tampada.';
-        }
-        else {
-            return 'Você você faz um rabisco sem sentido e gasta 15% da carga de tinta.';
-        }
-    };
-    Caneta.prototype.desenhar = function () {
-        if (this.tampada) {
-            return 'Você não pode desenhar, pois sua caneta esta tampada.';
-        }
-        else {
-            return 'Você você faz um lindo desenho e gasta 20% da carga de tinta.';
-        }
-    };
     return Caneta;
 }());
 exports.default = Caneta;

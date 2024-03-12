@@ -29,22 +29,4 @@ export default class Caneta {
       return 'Você escreve uma linda frase e gasta 10% da carga de tinta.'
     }
   }
-
-  public rabiscar(): string {
-    if (this.tampada) {
-      return 'Você não pode rabiscar, pois sua caneta esta tampada.'
-    } else {
-
-      return 'Você você faz um rabisco sem sentido e gasta 15% da carga de tinta.'
-    }
-  }
-
-  public desenhar(): string {
-    if (this.tampada) {
-      return 'Você não pode desenhar, pois sua caneta esta tampada.'
-    } else {
-
-      return 'Você você faz um lindo desenho e gasta 20% da carga de tinta.'
-    }
-  }
 }
