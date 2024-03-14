@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Funcionario_1 = require("./Funcionario/Funcionario");
 // let bic = new Caneta();
 // bic.modelo = 'Bic Crystal';
 // bic.cor = 'Azul';
@@ -10,5 +9,5 @@ var Funcionario_1 = require("./Funcionario/Funcionario");
 // console.log(bic.escrever());
 // bic.destampar();
 // bic.status();
-var funcionario = new Funcionario_1.default('João Paulo', 33, false);
-funcionario.getStatus();
+// let funcionario = new Funcionario('João Paulo', 33, false);
+// funcionario.getStatus();

@@ -1,4 +1,5 @@
 import Caneta from "./Caneta/Caneta";
+import Conta from "./Conta/Conta";
 import Funcionario from "./Funcionario/Funcionario";
 
 // let bic = new Caneta();
@@ -14,6 +15,7 @@ import Funcionario from "./Funcionario/Funcionario";
 // bic.status();
 
 
-let funcionario = new Funcionario('João Paulo', 33, false);
+// let funcionario = new Funcionario('João Paulo', 33, false);
 
-funcionario.getStatus();
+// funcionario.getStatus();
+
