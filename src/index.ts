@@ -2,6 +2,7 @@ import Caneta from "./Caneta/Caneta";
 import Conta from "./Conta/Conta";
 import Funcionario from "./Funcionario/Funcionario";
 
+// Exemplo 01
 // let bic = new Caneta();
 
 // bic.modelo = 'Bic Crystal';
@@ -14,8 +15,18 @@ import Funcionario from "./Funcionario/Funcionario";
 // bic.destampar();
 // bic.status();
 
-
+// Exemplo 02
 // let funcionario = new Funcionario('João Paulo', 33, false);
 
 // funcionario.getStatus();
 
+
+
+// Exemplo 03
+let contaJoao = new Conta();
+
+contaJoao.setDono('João Paulo');
+contaJoao.setNumConta(123456);
+contaJoao.abrirConta('CC');
+contaJoao.pagarMensal();
+console.log(contaJoao);
