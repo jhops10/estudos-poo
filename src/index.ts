@@ -1,6 +1,6 @@
-import Caneta from "./Caneta/Caneta";
-import Conta from "./Conta/Conta";
-import Funcionario from "./Funcionario/Funcionario";
+import Caneta from "./Exemplos/Caneta/Caneta";
+import Conta from "./Exemplos/Conta/Conta";
+import Funcionario from "./Exemplos/Funcionario/Funcionario";
 
 // Exemplo 01
 // let bic = new Caneta();
@@ -23,10 +23,10 @@ import Funcionario from "./Funcionario/Funcionario";
 
 
 // Exemplo 03
-let contaJoao = new Conta();
+// let contaJoao = new Conta();
 
-contaJoao.setDono('João Paulo');
-contaJoao.setNumConta(123456);
-contaJoao.abrirConta('CC');
-contaJoao.pagarMensal();
-console.log(contaJoao);
+// contaJoao.setDono('João Paulo');
+// contaJoao.setNumConta(123456);
+// contaJoao.abrirConta('CC');
+// contaJoao.pagarMensal();
+// console.log(contaJoao);
