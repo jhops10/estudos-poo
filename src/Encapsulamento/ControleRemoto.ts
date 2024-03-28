@@ -39,9 +39,14 @@ export class ControleRemoto implements Controlador {
     this.setLigado(false);
   }
   abrirMenu(): void {
-    console.log(this.getLigado());
-    console.log(this.getVolume());
-    console.log(this.getTocando());
+    if (this.getLigado()) {
+      console.log('-----MENU-----');
+      console.log(this.getLigado());
+      console.log(this.getVolume());
+      console.log(this.getTocando());
+    } else {
+      console.log('Controle Desligado')
+    }
   }
   fecharMenu(): void {
     console.log('Menu Desligado')
@@ -52,7 +57,11 @@ export class ControleRemoto implements Controlador {
     }
   }
   menosVOlume(): void {
-    this.setVolume(-10)
+    if (this.getLigado() && this.volume > 10) {
+      this.setVolume(-10)
+    } else {
+      console.log('Você já está no volume mínimo.')
+    }
   }
   ligarMudo(): void {
     this.volume = 0;
@@ -61,9 +70,17 @@ export class ControleRemoto implements Controlador {
     this.setVolume(50);
   }
   play(): void {
-    this.setTocando(true);
+    if (!this.getTocando()) {
+      this.setTocando(true);
+    } else {
+      console.log('Você já está tocando.')
+    }
   }
   pause(): void {
-    this.setTocando(false);
+    if (this.getTocando()) {
+      this.setTocando(false);
+    } else {
+      console.log('Nada Tocando no momento.')
+    }
   }
 }
