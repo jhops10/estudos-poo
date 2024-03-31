@@ -1,32 +1,14 @@
-import Caneta from "./Exemplos/Caneta/Caneta";
-import Conta from "./Exemplos/Conta/Conta";
-import Funcionario from "./Exemplos/Funcionario/Funcionario";
+import Lutador from "./Relacionamento Entre Classes/Lutador/Lutador";
 
-// Exemplo 01
-// let bic = new Caneta();
+let lutadores: Lutador[] = [];
 
-// bic.modelo = 'Bic Crystal';
-// bic.cor = 'Azul';
-// // bic.ponta = 0.5;
-// // bic.carga = 100;
-// // bic.tampada = true;
-
-// console.log(bic.escrever());
-// bic.destampar();
-// bic.status();
-
-// Exemplo 02
-// let funcionario = new Funcionario('João Paulo', 33, false);
-
-// funcionario.getStatus();
+lutadores[0] = new Lutador("Pretty Boy", "França", 1.75, 68.9, 11, 3, 1);
+lutadores[1] = new Lutador("Putscript", "Brasil", 1.68, 57.8, 14, 2, 3);
+lutadores[2] = new Lutador("Snapshadow", "EUA", 1.65, 80.9, 12, 2, 1);
+lutadores[3] = new Lutador("Dead Code", "Austrália", 1.93, 81.6, 13, 0, 2);
+lutadores[4] = new Lutador("Ufocobol", "Brasil", 1.70, 119.3, 5, 4, 3);
+lutadores[5] = new Lutador("Nerdaard", "EUA", 1.81, 105.7, 12, 2, 4);
 
 
-
-// Exemplo 03
-// let contaJoao = new Conta();
-
-// contaJoao.setDono('João Paulo');
-// contaJoao.setNumConta(123456);
-// contaJoao.abrirConta('CC');
-// contaJoao.pagarMensal();
-// console.log(contaJoao);
+lutadores[0].apresentar();
+lutadores[2].status
