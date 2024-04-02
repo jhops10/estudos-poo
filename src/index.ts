@@ -10,5 +10,3 @@ lutadores[4] = new Lutador("Ufocobol", "Brasil", 1.70, 119.3, 5, 4, 3);
 lutadores[5] = new Lutador("Nerdaard", "EUA", 1.81, 105.7, 12, 2, 4);
 
 
-lutadores[0].apresentar();
-lutadores[2].status
