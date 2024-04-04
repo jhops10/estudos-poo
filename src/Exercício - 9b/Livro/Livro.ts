@@ -9,7 +9,14 @@ export default class Livro implements Publicacao {
   private aberto!: boolean;
   private leitor!: Pessoa;
 
-  constructor() { }
+  constructor(titulo: string, autor: string, totPaginas: number, leitor: Pessoa) {
+    this.setTitulo(titulo);
+    this.setAutor(autor);
+    this.setTotPaginas(totPaginas);
+    this.setLeitor(leitor);
+    this.setAberto(false);
+    this.setPagAtual(0);
+   }
 
   abrir(): void {
     this.setAberto(true);
@@ -17,8 +24,9 @@ export default class Livro implements Publicacao {
   fechar(): void {
     this.setAberto(false);
   }
-  folhear(): void {
-    console.log('Você folheou o livro')
+  folhear(pagina: number): void {
+    console.log('Você folheou o livro até a página', pagina);
+    this.setPagAtual(pagina);
   }
   avancarPag(): void {
     this.setPagAtual(this.getPagAtual() + 1);
