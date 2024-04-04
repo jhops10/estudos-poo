@@ -1,28 +1,18 @@
-import Livro from "./Exercício - 9b/Livro/Livro";
-import Pessoa from "./Exercício - 9b/Pessoa/Pessoa";
-import { Luta } from "./Relacionamento Entre Classes/Luta/Luta";
-import Lutador from "./Relacionamento Entre Classes/Lutador/Lutador";
 
-// let lutadores: Lutador[] = [];
+import Aluno from "./Herança/Aluno/Aluno";
+import Funcionario from "./Herança/Funcionario/Funcionario";
+import Pessoa from "./Herança/Pessoa/Pessoa";
+import Professor from "./Herança/Professor/Professor";
 
-// lutadores[0] = new Lutador("Marcos Rogério", "França", 1.75, 68.9, 11, 3, 1);
-// lutadores[1] = new Lutador("Paulo Sérgio", "Brasil", 1.68, 57.8, 14, 2, 3);
-// lutadores[2] = new Lutador("Francisco Pereira", "EUA", 1.65, 80.9, 12, 2, 1);
-// lutadores[3] = new Lutador("João Paulo", "Austrália", 1.93, 81.6, 13, 0, 2);
-// lutadores[4] = new Lutador("Zé Mineiro", "Brasil", 1.70, 119.3, 5, 4, 3);
-// lutadores[5] = new Lutador("Glauber Silva", "EUA", 1.81, 105.7, 12, 2, 4);
+let p1 = new Pessoa();
+let p2 = new Aluno();
+let p3 = new Professor();
+let p4 = new Funcionario();
 
+p2.setNome('João');
+p3.setNome('Francisco');
+p4.setNome('Maria');
 
-// let UEC01 = new Luta();
-
-// UEC01.marcarLuta(lutadores[4], lutadores[5]);
-// UEC01.lutar();
-
-let leitor = new Pessoa('João Paulo', 33, 'Masculino');
-let livro = new Livro('A Bíblia Sagrada', 'Deus', 1000, leitor);
-
-
-livro.detalhes();
-livro.folhear(100);
-livro.avancarPag();
-livro.detalhes();
+p2.setCurso('Informática');
+p3.setSalario(2500);
+p4.setSetor('Estoque');
