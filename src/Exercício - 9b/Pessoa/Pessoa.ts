@@ -4,9 +4,9 @@ export default class Pessoa {
   private sexo!: string;
 
   constructor(nome: string, idade: number, sexo: string) {
-    this.nome = nome;
-    this.idade = idade;
-    this.sexo = sexo;
+    this.setNome(nome);
+    this.setIdade(idade);
+    this.setSexo(sexo);
   }
 
   public getNome() {
@@ -31,6 +31,8 @@ export default class Pessoa {
   }
 
   public fazerAniver() {
+    console.log('Parabéns!! É o seu aniversário!!')
     this.setIdade(this.getIdade() + 1);
+    console.log('Agora você tem:', this.getIdade(), 'anos');
   }
 }
