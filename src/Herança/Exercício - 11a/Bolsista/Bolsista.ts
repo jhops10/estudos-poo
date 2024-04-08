@@ -15,7 +15,7 @@ export default class Bolsista extends Aluno {
     console.log('Bolsa Renovada')
   }
 
-  public pagarMensalidade() {
+  public override pagarMensalidade() {
     console.log('Pagou a mensalidade como bolsista');
   }
 }
